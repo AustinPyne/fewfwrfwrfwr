@@ -1,0 +1,652 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="https://cdn.discordapp.com/emojis/791742603183259648.webp?size=96&quality=lossless" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menrosa Client</title>
+  <meta name="google-adsense-account" content="ENTER">
+  <meta name="theme-color" content="#9a14ff"/>
+  <meta property="og:title" content="AlonsoAliaga Development">
+  <meta property="og:image" content="https://raw.githubusercontent.com/AlonsoAliaga/alonsoaliaga.github.io/main/assets/minilogo.png">
+  <meta property="og:description" content="I'm just a hobbiest developer who likes coding plugins for spigot and discord bots. Check out my work, you might find something useful for you!">
+  <meta property="og:url" content="https://alonsoaliaga.github.io/index.html">
+  <meta name="og:keywords" content="Spigot, Bungeecord, Paper, AlonsoAliaga, Minecraft, Plugins, HTML, CSS, JavaScript, Java">
+  <meta name="keywords" content="Spigot, Bungeecord, Paper, AlonsoAliaga, Minecraft, Plugins, HTML, CSS, JavaScript, Java">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta name="google-site-verification" content="i6mil4391N2WS3lnrPtt1MJs29WfgWSTUxxtdJAWEGQ" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5185973148525065"
+      crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+  <div id="online-counter" data-failed="0" style="position: relative;background-color: green;height: 30px;width: 100%;display: flex; align-items: center;justify-content: center;">🟢 0 online viewing our information!</div>
+  <!-- Navigation Bar -->
+  <nav id="dynamic-navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <img width="50px" src="./assets/minilogo.png">
+        <span class="logo-text">AlonsoAliaga Development</span>
+      </a>
+      <div class="nav-links">
+        <a href="#plugins">Plugins</a>
+        <a href="#designs">Designs</a>
+        <a href="#about">About Me</a>
+        <a href="#staff">Staff</a>
+        <a href="#languages">Languages</a>
+        <a href="#services">Services</a>
+        <a href="#plans">Plans</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#tools">Tools</a>
+        
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+          <button class="dropdown-toggle">
+            Quick tools <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-menu" id="resources-dropdown">
+            <!-- This will be populated via JavaScript -->
+            <div class="dropdown-loading">Loading resources...</div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="logo-circle small">
+        <span>AA</span>
+      </div>
+      <span class="logo-text">Menu</span>
+      <button class="mobile-menu-close">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="mobile-menu-content">
+      <a href="#plugins" class="mobile-link">Plugins</a>
+      <a href="#designs" class="mobile-link">Designs</a>
+      <a href="#about" class="mobile-link">About Me</a>
+      <a href="#staff" class="mobile-link">Staff</a>
+      <a href="#languages" class="mobile-link">Languages</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#plans" class="mobile-link">Plans</a>
+      <a href="#reviews" class="mobile-link">Reviews</a>
+      <a href="#faq" class="mobile-link">FAQ</a>
+      <a href="#tools" class="mobile-link">Tools</a>
+      
+      <!-- Mobile Dropdown -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-toggle">
+          Quick tools <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="mobile-dropdown-menu" id="mobile-resources-dropdown">
+          <!-- This will be populated via JavaScript -->
+          <div class="dropdown-loading">Loading resources...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div style="z-index: -80;" class="stars-bg" id="stars-background">
+    </div>
+    <div class="container text-center">
+      <div style="width: 250px; height: fit-content;" class="hero-logo">
+        <img width="350px" src="./assets/logo.gif" alt="AlonsoAliaga Development Logo" class="rounded-image">
+      </div>
+      <h1 class="gradient-text">AlonsoAliaga Development</h1>
+      <p class="hero-subtitle">Elevate your Minecraft server with us!</p>
+      <div style="display: flex; top: 500px;" class="button-group">
+        <a href="#plugins" class="button primary">Explore Plugins</a>
+        <a target="_blank" href="https://alonsoaliaga.com/discord" class="button outline">
+          <i class="fab fa-discord"></i> Join Discord
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section dark-section">
+    <div class="container">
+      <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="./assets/logo.gif" alt="Alonso Aliaga" class="rounded-image">
+        </div>
+        <div class="about-text">
+          <h3>Alonso Aliaga</h3>
+          <p class="lead">I'm a passionate Minecraft plugin developer dedicated to creating high-quality, innovative solutions for server owners.</p>
+          <p>With years of experience in Java development, I specialize in crafting plugins that enhance gameplay and server management. Beyond Minecraft, I also develop Discord bots to help communities stay connected and engaged.</p>
+          <p>I'm planning to create YouTube content focused on development tutorials, helping others learn how to create their own plugins and bots. My goal is to share knowledge and empower the next generation of developers in the Minecraft community.</p>
+          <div class="social-links">
+            <a target="_blank" href="https://alonsoaliaga.com/discord" class="social-link"><i class="fab fa-discord"></i> Discord</a>
+            <a target="_blank" href="https://github.com/AlonsoAliaga" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+            <a target="_blank" href="https://alonsoaliaga.com/site" class="social-link"><i class="fas fa-globe"></i> Website</a>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top: 60px;" id="libraries-div" data-aos="zoom-in">
+          <div class="gray-img image-wrapper">
+            <img src="assets/libraries/bungeecord_logo.png" class="img-fluid" alt="">
+          </div>
+          <div class="gray-img image-wrapper">
+            <img src="assets/libraries/papermc_logo.png" class="img-fluid" alt="">
+          </div>
+          <div class="gray-img image-wrapper">
+            <img src="assets/libraries/bungeecord_logo.png" class="img-fluid" alt="">
+          </div>
+          <div class="gray-img image-wrapper">
+            <img src="assets/libraries/discordjs_logo.png" class="img-fluid" alt="">
+          </div>
+          <div class="gray-img image-wrapper">
+            <img src="assets/libraries/jda_logo.png" class="img-fluid" alt="">
+          </div>
+          <div class="gray-img image-wrapper">
+            <img src="assets/libraries/youtube_logo.png" class="img-fluid" alt="">
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Plugins Section with Filtering -->
+  <section id="plugins" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="gradient-text">My Minecraft Plugins</span></h2>
+      
+      <div class="tabs" style="justify-items: center;">
+        <div class="tab-list">
+          <button class="tab-button active" data-tab="all">All</button>
+          <button class="tab-button" data-tab="free">FREE</button>
+          <button class="tab-button" data-tab="premium">PREMIUM</button>
+          <button class="tab-button" data-tab="alonso-series">ALONSO SERIES</button>
+          <button class="tab-button" data-tab="better-series">BETTER SERIES</button>
+          <button class="tab-button" data-tab="others">OTHERS</button>
+        </div>
+        
+        <div class="tab-content active" id="tab-all">
+        </div>
+        
+        <!-- Other tab contents will be populated via JavaScript -->
+        <div class="tab-content" id="tab-free"></div>
+        <div class="tab-content" id="tab-premium"></div>
+        <div class="tab-content" id="tab-alonso-series"></div>
+        <div class="tab-content" id="tab-better-series"></div>
+        <div class="tab-content" id="tab-others"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AlonsoAliaga Designs Section -->
+  <section id="designs" class="section dark-section">
+    <div class="container">
+      <h2 class="section-title"><span class="gradient-text">AlonsoAliaga Designs</span></h2>
+      <div class="designs-content">
+        <div class="designs-image">
+          <img src="./assets/alonsoaliagadesignslogo.png" alt="AlonsoAliaga Designs">
+        </div>
+        <div class="designs-text">
+          <h3>Custom Rank & Prestige Textures</h3>
+          <p class="lead">Elevate your Minecraft server's visual identity with our custom textures packs.</p>
+          <p>AlonsoAliaga Designs offers high-quality rank textures, and UI elements that will make your server stand out from the crowd. Each design is crafted with attention to detail and optimized for performance.</p>
+          <div class="design-features">
+            <div class="design-feature">
+              <h4>Rank Textures</h4>
+              <p>Rank textures for your players</p>
+            </div>
+            <div class="design-feature">
+              <h4>UI Elements</h4>
+              <p>Beautiful interface components for menus and GUIs</p>
+            </div>
+            <div class="design-feature">
+              <h4>Item Textures</h4>
+              <p>Custom textures for special items and weapons</p>
+            </div>
+            <div class="design-feature">
+              <h4>Custom Rank Textures</h4>
+              <p>Professional custom rank textures for your server</p>
+            </div>
+          </div>
+          <a target="_blank" rel="noopener noreferrer" href="https://alonsoaliaga.com/builtbybit" class="button primary">
+            <i class="fas fa-palette"></i> Explore Designs
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Staff Members Section -->
+  <section id="staff" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="gradient-text">Staff Members</span></h2>
+      <div class="staff-grid">
+        <!-- Staff Member 1 -->
+        <div class="staff-card">
+          <div class="staff-image">
+            <img src="./assets/logo.gif" alt="Staff Member" class="rounded-image">
+          </div>
+          <h3>Alonso Aliaga</h3>
+          <p class="staff-role">Main Developer</p>
+          <p class="staff-description">
+            Minecraft plugin developer with 5+ years of experience in Java and Spigot API.
+          </p>
+        </div>
+
+        <!-- Staff Member 2 -->
+        <div class="staff-card">
+          <div class="staff-image">
+            <img src="./assets/logo.gif" alt="Staff Member" class="rounded-image">
+          </div>
+          <h3>Alonso Aliaga</h3>
+          <p class="staff-role">Support Manager</p>
+          <p class="staff-description">
+            Handles customer support and community management for all plugins.
+          </p>
+        </div>
+
+        <!-- Staff Member 3 -->
+        <div class="staff-card">
+          <div class="staff-image">
+            <img src="./assets/logo.gif" alt="Staff Member" class="rounded-image">
+          </div>
+          <h3>Alonso Aliaga</h3>
+          <p class="staff-role">Web Developer</p>
+          <p class="staff-description">
+            Creates cool and useful web tools for server owners and users.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages Section -->
+  <section id="languages" class="section dark-section">
+    <div class="container">
+      <h2 class="section-title"><span class="gradient-text">Languages I Know</span></h2>
+      <div class="languages-grid">
+        <!-- Language 1 -->
+        <div class="language-card">
+          <div class="language-icon">
+            <span>J</span>
+          </div>
+          <h3>Java</h3>
+          <p>Intermediate</p>
+        </div>
+
+        <!-- Language 2 -->
+        <div class="language-card">
+          <div class="language-icon">
+            <span>JS</span>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Intermediate</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="gradient-text">Services</span></h2>
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="card">
+          <div class="card-content">
+            <div class="service-icon">
+              <i class="fas fa-puzzle-piece"></i>
+            </div>
+            <h3>Simple Minecraft Plugin Development</h3>
+            <p>Need a straightforward plugin to enhance your Minecraft server? I can create custom solutions tailored to your needs, focusing on core functionalities.</p>
+            <ul class="service-features">
+              <li>Custom commands and permissions</li>
+              <li>Event handling for dynamic in-game interactions</li>
+              <li>PlaceholderAPI integration for dynamic information</li>
+              <li>Vault API integration (economy)</li>
+              <li>Compatibility with one version you need (1.8.8 to latest)</li>
+              <li>Easy-to-understand configuration files</li>
+              <li>Delivered with clear setup instructions</li>
+              <li>Dedicated to bringing your simple plugin ideas to life</li>
+            </ul>
+            <p class="note">Note: I specialize in simple plugins and do not develop minigames, involve NMS/packets, or complex systems.</p>
+            <a style="text-align: center;" href="https://alonsoaliaga.com/discord" class="price-tag">Starting from $30<br>Contact for a quote</a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="card">
+          <div class="card-content">
+            <div class="service-icon">
+              <i class="fas fa-id-badge"></i> </div>
+            <h3>Custom Rank & Prestige Textures</h3>
+            <p>Elevate your server's visual identity with unique, high-quality textures for player ranks, prestiges, or any progression system. Compatible with ItemsAdder or Nexo, we provide stunning designs and ready-to-use configurations for a seamless integration.</p>
+            <ul class="service-features">
+              <li>Bespoke texture designs for each rank tier</li>
+              <li>Pixel-perfect ItemsAdder/Oraxen configuration provided</li>
+              <li>Designs for massive-scale rank systems (e.g., Prison A-Z, 1-10000+)</li>
+              <li>Color designs matching your server's unique aesthetic</li>
+            </ul>
+            <a style="text-align: center;" href="https://alonsoaliaga.com/discord" class="price-tag">Starting from $25<br>Contact for a quote</a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="card">
+          <div class="card-content">
+            <div class="service-icon">
+              <i class="fas fa-wrench"></i> </div>
+            <h3>Plugin Support & Enhancement</h3>
+            <p>Breathe new life into your server's plugins! We specialize in troubleshooting, updating, and enhancing existing open-source plugins (source code required) to ensure they run smoothly and meet your specific needs.</p>
+            <ul class="service-features">
+              <li>Troubleshooting & bug fixing for open-source plugins</li>
+              <li>Updating plugins to support newer Minecraft versions (e.g., 1.20.x, 1.21.x)</li>
+              <li>Resolving specific gameplay mechanic issues or glitches</li>
+              <li>Adding compatibility or integration with other third-party plugins</li>
+              <li>Console error identification and resolution</li>
+              <li>Minor feature additions or alterations to existing plugin functions</li>
+              <li>Adding new commands or permissions to existing plugins</li>
+              <li>Custom event handling or integration within a plugin</li>
+              <li>Support for custom placeholder expansions (e.g., PlaceholderAPI)</li>
+            </ul>
+            <a style="text-align: center;" href="https://alonsoaliaga.com/discord" class="price-tag">Starting from $30<br>Contact for a quote</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans Section with joke lines -->
+  <section id="plans" class="section dark-section">
+    <div class="container">
+      <h2 class="section-title"><span class="gradient-text">Plans & Pricing</span></h2>
+      <div class="plans-grid">
+        <!-- Plan 1 -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <h3>Free Plan</h3>
+            <div class="plan-price">
+              <span class="price">$0</span>
+              <span class="period"></span>
+            </div>
+          </div>
+          <div class="plan-content">
+            <ul class="plan-features">
+              <li class="included">Access to our free plugins</li>
+              <li class="included">Get support in our <a target="_blank" href="https://alonsoaliaga.com/discord">Discord</a></li>
+              <li class="joke">Telepathic support at 3 AM</li>
+              <li class="joke">Access to <a target="_blank" href="https://alonsoaliaga.com/onlyfans">Onlyfans</a></li>
+              <li class="joke">Eat a chocolate cake with Alonso</li><br>
+              <span class="small">* Options in gray are not available.</span>
+            </ul>
+            <a target="_blank" rel="noopener noreferrer" href="https://alonsoaliaga.com/discord" class="button primary full-width">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Plan 2 -->
+        <div class="plan-card popular">
+          <div class="popular-tag">POPULAR</div>
+          <div class="plan-header">
+            <h3>Business Plan</h3>
+            <div class="plan-price">
+              <span class="price">$9.99</span>
+              <span class="period">/per plugin</span>
+            </div>
+          </div>
+          <div class="plan-content">
+            <ul class="plan-features">
+              <li class="included"><b>1</b> custom coded <b>basic</b> plugin</li>
+              <span class="included">&ensp;&ensp;Features:</span><br>
+              <span class="included">&ensp;&ensp;&ensp;🔘 <b>Up to 1</b> command</span><br>
+              <span class="included">&ensp;&ensp;&ensp;🔘 <b>Up to 1</b> event</span><br>
+              <span class="included">&ensp;&ensp;&ensp;🔘 On/off mechanics</span><br>
+              <span class="included">&ensp;&ensp;&ensp;🔘 Give items</span>
+              <li class="included">Get support in our <a target="_blank" href="https://alonsoaliaga.com/discord">Discord</a></li>
+              <li class="joke">Telepathic support at 3 AM</li>
+              <li class="joke">Access to <a target="_blank" href="https://alonsoaliaga.com/onlyfans">Onlyfans</a></li>
+              <li class="joke">Eat a chocolate cake with Alonso</li><br>
+              <span class="small">* Options in gray are not available.</span>
+            </ul>
+            <a target="_blank" rel="noopener noreferrer" href="https://alonsoaliaga.com/discord" class="button primary full-width">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <h3>Enterprise</h3>
+            <div class="plan-price">
+              <span class="price">$29.99</span>
+              <span class="period">/per plugin</span>
+            </div>
+          </div>
+          <div class="plan-content">
+            <ul class="plan-features">
+              <li class="included"><b>1</b> custom coded <b>basic</b> plugin</li>
+              <span class="included">&ensp;&ensp;Features:</span><br>
+              <span class="included">&ensp;&ensp;&ensp;🔘 <b>Up to 2</b> command</span><br>
+              <span class="included">&ensp;&ensp;&ensp;🔘 <b>Up to 2</b> event</span><br>
+              <span class="included">&ensp;&ensp;&ensp;🔘 On/off mechanics</span><br>
+              <span class="included">&ensp;&ensp;&ensp;🔘 Give items</span><br>
+              <span class="included">&ensp;&ensp;&ensp;🔘 Database support</span><br>
+              <span class="included">&ensp;&ensp;&ensp;🔘 Inventory system (basic)</span>
+              <li class="included">Get support in our <a target="_blank" href="https://alonsoaliaga.com/discord">Discord</a></li>
+              <li class="joke">Telepathic support at 3 AM</li>
+              <li class="joke">Access to <a target="_blank" href="https://alonsoaliaga.com/onlyfans">Onlyfans</a></li>
+              <li class="joke">Eat a chocolate cake with Alonso</li><br>
+              <span class="small">* Options in gray are not available.</span>
+            </ul>
+            <a target="_blank" rel="noopener noreferrer" href="https://alonsoaliaga.com/discord" class="button primary full-width">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="gradient-text">Client Reviews</span></h2>
+      <div id="reviews-section" class="reviews-grid">
+        <!-- Review 1 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section dark-section">
+    <div class="container">
+      <h2 class="section-title"><span class="gradient-text">Frequently Asked Questions</span></h2>
+      <div class="faq-container">
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Can I use your plugins in my setups?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Yes, you are free to use our plugins in your setups, you can share config files. However, we don't allow sharing our .jar files inside.<br>
+                  This is because of several good reasons, some of them will be listed below:<br><br>
+                  <b>1)</b> Shared .jar files might be outdated.<br>
+                  <b>2)</b> Files could potentially contain malicious code.<br>
+                  <b>3)</b> Files could be infected by other plugins.<br>
+                  <b>4)</b> According to the terms of use, you are <b>not  allowed</b> to redistribute the plugin in any form, including as a part of any software package.<br><br>
+                  If you downloaded the jar from a site different than spigotmc.org, <b>redownload the plugin again from original sources</b>.<br><br>
+                  We can't offer support to people using our plugins downloaded from 3rd-party sources. This is for security!</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Can I share your plugin in mcbbs or similar sites? 
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Sorry, but you don't have my permission to do that. I don't allow "sharing" my plugin/content/posts in other site, even if you redirect visits to original post on spigotmc.<br><br>
+                  <b>💠 Why not?</b><br>
+                  Answer is simple. I am the graphic designer of my posts, main (and the only one) developer, I also write the posts (every single word).<br><br>
+                  <b>So why then?</b> Well, first of all, I want to have <b>full control</b> of all data/information shared about my resources.<br><br>
+                  That means I want to be the only person that officially writes about my resources, which allows me to keep the data updated!<br>
+                  Second of all, this is my work, days of coding, hours of designing the images and writing the posts. I want to take full credit of it.<br><br>
+                  Please, <b>do not insist</b>, I won't change my mind. Thanks.</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <button class="accordion-header">
+              How can I get translations in other languages?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Sorry, I'm the only developer. Maintaining more than one language would be hard and I'm not willing to work with translators, at least not for now.<br>
+                  The only official language that will always be supported is and will always be english as it's a global language.<br><br>
+                  You can check the wiki of the plugin you want to see if a translated version of the config files was uploaded, however, we don't ensure they are properly translated as we only support english officially.<br><br>
+                  If you translated a plugin to your native language, you can contribute by sending the files you translated in a <span style="font-weight: bold;">Pastebin</span> so we can easily access the content. Make sure you allow others to read the content and it's not set as private only!<br><br>
+                  ⚡ When translating, make sure you <b>only edit messages</b> and <b>don't delete options or sections</b> if you plan to send the files to us. If you are translating it for your own server, do not delete options/sections unless it's <b>explicit stated</b> that you can do that in comments.</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Why plugins are in BETA version?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Well, plugins will always have the <b>BETA</b> tag. There is no logic explanation for this, I just liked the word and after releasing some plugins I decided to keep the word <b>BETA</b> in plugins versions for ever.<br><br>
+                  That doesn't mean plugins have bugs or errors, all of them <b>are tested and should be working fine</b>.<br><br>
+                  ⚡ <b>If you have any bug or error make sure you report it on Github or in our  <a target="_blank" href="https://alonsoaliaga.com/discord" style="display: inline;padding: 0 0;">Discord server</a>.</b></p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Do you offer refunds?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>We do not offer refunds. Our work is digital so no refund is offered once a payment is processed.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              I like your plugins. Can I suggest you cool ideas for new ones? 
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Sure, join my discord server and let me know. I'll evaluate the suggestion and decide if I wanna code it or not.<br><br>
+                <b>Making a suggestion doesn't mean it will be made.</b>
+              </p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Love your work! How can I support you?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>If you want to support my work consider purchasing my <a target="_blank" href="https://alonsoaliaga.com/plugins" style="display: inline;padding: 0 0;">premium plugins</a> or donating on <a target="_blank" href="https://alonsoaliaga.com/donate" style="display: inline;padding: 0 0;">PayPal</a>!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Website Tools Section -->
+  <section id="tools" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="gradient-text">Website Tools</span></h2>
+      <div style="text-align: center;">
+        <h3>Tools has been made by our team for server owners and users.</h3><br>
+      </div>
+      <div id="website-tools" class="tools-grid">
+        <!-- This div will be populated by JavaScript -->
+        <!-- Example Tool Card (will be replaced by JavaScript) -->
+        <div class="card">
+          <div class="card-content">
+            <div class="tool-icon">
+              <i class="fas fa-wrench"></i>
+            </div>
+            <h3>Loading Tools...</h3>
+            <p>Our website tools are loading. Please wait a moment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2>Ready to elevate your Minecraft server?</h2>
+      <p class="cta-text">Join thousands of server owners who trust AlonsoAliaga Development for reliability and performance.</p>
+      <div class="button-group">
+        <a href="#plugins" class="button primary">Browse Plugins</a>
+        <a target="_blank" href="https://alonsoaliaga.com/discord" class="button outline">
+          <i class="fab fa-discord"></i> Join Discord
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img width="50px" src="./assets/minilogo.png">
+          <span class="logo-text">AlonsoAliaga Development</span>
+        </div>
+        <div class="footer-links">
+          <a href="#plugins">Plugins</a>
+          <a href="#designs">Designs</a>
+          <a href="#about">About</a>
+          <a href="#staff">Staff</a>
+          <a href="#services">Services</a>
+          <a href="#plans">Plans</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-social">
+          <a target="_blank" href="https://alonsoaliaga.com/discord"><i class="fab fa-discord"></i><span class="sr-only">Discord</span></a>
+          <a target="_blank" href="https://github.com/AlonsoAliaga"><i class="fab fa-github"></i><span class="sr-only">GitHub</span></a>
+          <a target="_blank" href="https://alonsoaliaga.com/plugins"><i class="fas fa-globe"></i><span class="sr-only">Plugins</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2020 AlonsoAliaga Development. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+  <script src="resources.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5185973148525065"
+     crossorigin="anonymous"></script>
+
+    <div id="mybutton">
+    <div style="position: fixed;left: 15px;bottom: 15px;display: inline-block;">
+      <button class="buttonface"><a href="https://alonsoaliaga.github.io"><img src="https://raw.githubusercontent.com/AlonsoAliaga/alonsoaliaga.github.io/main/assets/img/apple-touch-icon.png"></a></button>
+      <br>
+      <div id="visitor-counter" style="text-align: center;">
+        <span id="counter-amount" style="text-shadow: 0px 0px 10px #ffffff;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: bold;">Visits: 0</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
